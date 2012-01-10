@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="auslfe.formonline.tokenaccess">
+
+<head>
+<metal:main fill-slot="style_slot">
+	<!-- we need those CSS rules as Plone 3 doesn't support the column hiding using request -->
+	<style type="text/css">
+	<!--
+	
+	#portal-column-one, #portal-column-two {
+		display: none;
+	}
+	
+	.formOnlineApprovedMessage {
+		font-size: 200%;
+		text-align:center;
+		font-weight: bold;
+	}
+	
+	-->
+	</style>
+</metal:main>
+</head>
+
+<body>
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+	<div class="formOnlineApprovedMessage" tal:condition="python:view.result=='pending_dispatch'"
+	     i18n:translate="approve-view-message">
+		You have approved the submitted form
+	</div>
+	<div class="formOnlineApprovedMessage error"
+		 tal:condition="view/error|nothing"
+	     i18n:translate="">
+		This request is invalid, probably already performed
+	</div>
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>
+

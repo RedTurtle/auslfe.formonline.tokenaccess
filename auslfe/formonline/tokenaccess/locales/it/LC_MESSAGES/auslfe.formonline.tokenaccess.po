@@ -1,0 +1,36 @@
+# Italian translation for auslfe.formonline.tokenaccess
+# Luca Fabbri <keul@redturtle.it>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: auslfe.formonline.tokenaccess\n"
+"POT-Creation-Date: 2012-01-10 10:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Luca Fabbri <keul@redturtle.it>\n"
+"Language-Team: RedTurtle Technology <sviluppoplone@redturtle.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: in\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: auslfe.formonline.tokenaccess\n"
+
+#: ../browser/change_state_link.pt:8
+msgid "Note"
+msgstr "Nota"
+
+#: ../browser/approve.pt:38
+msgid "This request is invalid, probably already performed"
+msgstr "La richiesta è invalida, probabilmente già eseguita"
+
+#. Default: "To approve the current document, visit this URL:"
+#: ../browser/change_state_link.pt:10
+msgid "approval_link"
+msgstr "Per approvare questo documento, visita questo URL:"
+
+#. Default: "You have approved the submitted form"
+#: ../browser/approve.pt:34
+msgid "approve-view-message"
+msgstr "Hai approvato la richiesta"
+

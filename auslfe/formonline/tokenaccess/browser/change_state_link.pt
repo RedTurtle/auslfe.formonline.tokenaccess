@@ -1,0 +1,17 @@
+<div xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="auslfe.formonline.tokenaccess"
+     id="formOnlineChangeState"
+     tal:define="wtool python:view.portal_workflow;
+                 context_state python:wtool.getInfoFor(context, 'review_state');">
+
+		<dl class="portalMessage" tal:condition="python:context_state=='pending_approval' and view.checkToken()">
+			<dt i18n:translate="">Note</dt>
+			<dd>
+				<span tal:omit-tag="" i18n:translate="approval_link">To approve the current document, visit this URL:</span>
+				<br/>
+				<a tal:attributes="href view/approveUrl"
+				   tal:content="view/approveUrl">http://foo...</a>
+			</dd>
+		</dl>
+
+</div>

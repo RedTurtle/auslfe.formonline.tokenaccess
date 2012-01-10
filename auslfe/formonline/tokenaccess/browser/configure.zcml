@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="auslfe.formonline.tokenaccess">
+
+  <include package="plone.app.contentmenu" />
+
+  <browser:page
+     name="tinyview"
+     for="auslfe.formonline.content.interfaces.IFormOnline"
+     permission="zope2.View"
+     class=".view.TinyView"
+	 template="tinyview.pt"
+     />
+
+  <browser:page
+     name="approveFormOnline"
+     for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+     permission="zope.Public"
+     class=".approve.ApproveFormOnlineView"
+	 template="approve.pt"
+     />
+
+  <!-- register the same viewlet also for the view defined up -->
+  <browser:viewlet
+     name="auslfe.formonline.content.workflowinfos"
+     for="auslfe.formonline.content.interfaces.IFormOnline"
+     view=".view.ITinyView"
+     manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+     permission="zope2.View"
+     class="auslfe.formonline.content.browser.viewlet.WorkflowInfoViewlet"
+     />  
+
+  <browser:viewlet
+     name="auslfe.formonline.tokenaccess.changeState"
+     for="auslfe.formonline.content.interfaces.IFormOnline"
+     view=".view.ITinyView"
+     manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+     permission="zope2.View"
+     class=".viewlet.ChangeStateLinkViewlet"
+     />  
+
+</configure>
