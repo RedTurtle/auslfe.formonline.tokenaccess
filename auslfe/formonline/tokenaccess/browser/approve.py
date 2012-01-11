@@ -9,8 +9,8 @@ class ApproveFormOnlineView(ConsumePowerTokenView):
     def __call__(self, *args, **kw):
         self.request.set('disable_border', 1)
         # following two only on Plone 4+
-        self.request.set('isable_plone.leftcolumn', 1)
-        self.request.set('isable_plone.rightcolumn', 1)
+        self.request.set('disable_plone.leftcolumn', 1)
+        self.request.set('disable_plone.rightcolumn', 1)
         self.error = False
         try:
             self.result = ConsumePowerTokenView.__call__(self, *args, **kw)[0]

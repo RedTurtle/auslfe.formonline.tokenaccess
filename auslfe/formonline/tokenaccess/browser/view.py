@@ -13,6 +13,6 @@ class TinyView(BrowserView):
         BrowserView.__init__(self, context, request)
         self.request.set('disable_border', 1)
         # following two only on Plone 4+
-        self.request.set('isable_plone.leftcolumn', 1)
-        self.request.set('isable_plone.rightcolumn', 1)
+        self.request.set('disable_plone.leftcolumn', 1)
+        self.request.set('disable_plone.rightcolumn', 1)
         
