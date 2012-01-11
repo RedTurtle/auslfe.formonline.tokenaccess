@@ -5,7 +5,7 @@ Enable anonymous use of `auslfe.formonline.pfgadapter`__ features using e-mail c
 Token feature came from `collective.powertoken`__ suite.
 
 __ http://plone.org/products/auslfe.formonline.pfgadapter
-__ http://plone.org/collective.powertoken.core
+__ http://plone.org/products/collective.powertoken.core
 
 How to install
 ==============
