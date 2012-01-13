@@ -12,7 +12,8 @@
   <include package="collective.powertoken.view" />
   <include package=".browser" />
 
-  <adapter for="auslfe.formonline.pfgadapter.interfaces.IFormOnlineActionAdapter"
+  <adapter for="auslfe.formonline.pfgadapter.interfaces.IFormOnlineActionAdapter
+                zope.publisher.interfaces.browser.IBrowserRequest"
        provides="auslfe.formonline.pfgadapter.interfaces.IFormSharingProvider"
        factory=".sharing_provider.EmailWithTokenSharingProvider"
 	   name="provider-for-email" />

@@ -10,8 +10,9 @@ from collective.powertoken.core.interfaces import IPowerTokenUtility
 class EmailWithTokenSharingProvider(object):
     implements(IFormSharingProvider)
     
-    def __init__(self, context):
+    def __init__(self, context, request):
         self.context = context
+        self.request = request
     
     def share(self, formonline, overseer):
         """

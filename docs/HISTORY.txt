@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 * fixed disabling columns on Plone 4 [keul]
+* internal changes due to changes done in ``auslfe.formonline.tokenaccess`` 0.4.1 [keul]
 
 0.1.0 (2012-01-11)
 ------------------
