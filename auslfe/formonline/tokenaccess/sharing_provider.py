@@ -16,7 +16,7 @@ class EmailWithTokenSharingProvider(object):
     
     def share(self, formonline, overseer):
         """
-        Gives to an unknow overseer (an e-mail adress):
+        Gives to an unknow overseer (an e-mail address):
          * a temporary Editor role
          * a permanent Reader role
         
