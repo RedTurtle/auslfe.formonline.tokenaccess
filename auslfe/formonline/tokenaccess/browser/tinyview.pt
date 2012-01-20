@@ -50,14 +50,6 @@
             This item does not have any body text, click the edit tab to change it.
         </p>
 
-        <div tal:replace="structure provider:plone.abovecontentbody" />
-
-        <p tal:condition="python: not text and is_editable"
-           i18n:translate="no_body_text"
-           class="discreet">
-            This item does not have any body text, click the edit tab to change it.
-        </p>
-
         <metal:field use-macro="python:here.widget('text', mode='view')">
         Body text
         </metal:field>

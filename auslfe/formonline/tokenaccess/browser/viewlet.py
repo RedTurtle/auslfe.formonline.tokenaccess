@@ -25,6 +25,11 @@ class ChangeStateLinkViewlet(common.ViewletBase):
         targetUrl = self.request.get('path').replace("%s/" % portal_url(), "")
         return "%s/@@approveFormOnline?path=%s&token=%s" % (self.site_url, targetUrl, self.tokens['approve'])
 
+    def rejectUrl(self):
+        portal_url = getToolByName(self.context, 'portal_url')
+        targetUrl = self.request.get('path').replace("%s/" % portal_url(), "")
+        return "%s/@@approveFormOnline?path=%s&token=%s" % (self.site_url, targetUrl, self.tokens['reject'])
+
     def checkToken(self):
         token = self.request.form.get('token')
         saved_tokens = self.tokens

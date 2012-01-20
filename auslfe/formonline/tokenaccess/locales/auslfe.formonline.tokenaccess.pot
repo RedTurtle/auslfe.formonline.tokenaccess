@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-01-10 10:41+0000\n"
+"POT-Creation-Date: 2012-01-20 16:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Note"
 msgstr ""
 
-#: ../browser/approve.pt:38
+#: ../browser/approve.pt:42
 msgid "This request is invalid, probably already performed"
 msgstr ""
 
@@ -33,5 +33,15 @@ msgstr ""
 #. Default: "You have approved the submitted form"
 #: ../browser/approve.pt:34
 msgid "approve-view-message"
+msgstr ""
+
+#. Default: "You have rejected the submitted form"
+#: ../browser/approve.pt:38
+msgid "reject-view-message"
+msgstr ""
+
+#. Default: "To reject the current document, visit this URL:"
+#: ../browser/change_state_link.pt:20
+msgid "reject_link"
 msgstr ""
 

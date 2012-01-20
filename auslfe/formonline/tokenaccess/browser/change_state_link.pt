@@ -14,4 +14,15 @@
 			</dd>
 		</dl>
 
+		<dl class="portalMessage" tal:condition="python:context_state=='pending_approval' and view.checkToken()">
+			<dt i18n:translate="">Note</dt>
+			<dd>
+				<span tal:omit-tag="" i18n:translate="reject_link">To reject the current document, visit this URL:</span>
+				<br/>
+				<a tal:attributes="href view/rejectUrl"
+				   tal:content="view/rejectUrl">http://foo...</a>
+			</dd>
+		</dl>
+
+
 </div>

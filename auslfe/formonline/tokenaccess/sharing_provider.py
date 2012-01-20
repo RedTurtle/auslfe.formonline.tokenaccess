@@ -28,11 +28,16 @@ class EmailWithTokenSharingProvider(object):
                                              roles=['Owner'],
                                              oneTime=False,
                                              view='tinyview')
-        #utility.addAction(formonline, token, 'workflow.doAction')
         tokenApprove = utility.enablePowerToken(formonline,
                                                 'workflow.doAction',
                                                 roles=['Editor'],
                                                 workflow_action='approval')
+        tokenReject = utility.enablePowerToken(formonline,
+                                               'workflow.doAction',
+                                               roles=['Editor'],
+                                               workflow_action='retract_approval')
         IAnnotations(formonline)['share-tokens'] = {'email': overseer,
                                                     'view': tokenView,
-                                                    'approve': tokenApprove}
+                                                    'approve': tokenApprove,
+                                                    'reject': tokenReject,
+                                                    }

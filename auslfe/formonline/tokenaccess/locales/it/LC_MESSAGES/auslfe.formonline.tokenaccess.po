@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: auslfe.formonline.tokenaccess\n"
-"POT-Creation-Date: 2012-01-10 10:41+0000\n"
+"POT-Creation-Date: 2012-01-20 16:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Luca Fabbri <keul@redturtle.it>\n"
 "Language-Team: RedTurtle Technology <sviluppoplone@redturtle.it>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Note"
 msgstr "Nota"
 
-#: ../browser/approve.pt:38
+#: ../browser/approve.pt:42
 msgid "This request is invalid, probably already performed"
 msgstr "La richiesta è invalida, probabilmente già eseguita"
 
@@ -33,4 +33,14 @@ msgstr "Per approvare questo documento, visita questo URL:"
 #: ../browser/approve.pt:34
 msgid "approve-view-message"
 msgstr "Hai approvato la richiesta"
+
+#. Default: "You have rejected the submitted form"
+#: ../browser/approve.pt:38
+msgid "reject-view-message"
+msgstr "Hai rifiutato la richiesta"
+
+#. Default: "To reject the current document, visit this URL:"
+#: ../browser/change_state_link.pt:20
+msgid "reject_link"
+msgstr "Per rifiutare questo documento, visita questo URL:"
 
