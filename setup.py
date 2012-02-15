@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.3.0'
+version = '0.3.1'
 
 setup(name='auslfe.formonline.tokenaccess',
       version=version,
@@ -29,7 +29,7 @@ setup(name='auslfe.formonline.tokenaccess',
           'setuptools',
           'auslfe.formonline.pfgadapter>=0.4.1',
           'auslfe.formonline.content>=0.4.0',
-          'collective.powertoken.workflow>0.2.0',
+          'collective.powertoken.workflow>=0.2.0',
           'collective.powertoken.view'
       ],
       entry_points="""
