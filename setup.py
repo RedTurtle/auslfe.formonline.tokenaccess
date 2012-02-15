@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.2.0'
+version = '0.3.0'
 
 setup(name='auslfe.formonline.tokenaccess',
       version=version,
@@ -14,7 +14,7 @@ setup(name='auslfe.formonline.tokenaccess',
         "Framework :: Plone",
         "Framework :: Plone :: 3.3",
         "Programming Language :: Python",
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         ],
       keywords='plonegov form plone token',
       author='RedTurtle Technology',
@@ -29,7 +29,7 @@ setup(name='auslfe.formonline.tokenaccess',
           'setuptools',
           'auslfe.formonline.pfgadapter>=0.4.1',
           'auslfe.formonline.content>=0.4.0',
-          'collective.powertoken.workflow',
+          'collective.powertoken.workflow>0.2.0',
           'collective.powertoken.view'
       ],
       entry_points="""

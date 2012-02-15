@@ -16,6 +16,10 @@
 		display: none;
 	}
 	
+	#formOnlineChangeState #comment {
+		with: 100%;
+	}
+	
 	-->
 	</style>
 </metal:main>
@@ -36,7 +40,7 @@
 
         <div tal:replace="structure provider:plone.belowcontenttitle" />
 
-        <p class="documentDescription">
+        <p class="documentDescription" tal:condition="context/Description|nothing">
             <metal:field use-macro="python:here.widget('description', mode='view')">
             Description
             </metal:field>

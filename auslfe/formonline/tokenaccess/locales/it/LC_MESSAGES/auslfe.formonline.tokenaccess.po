@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: auslfe.formonline.tokenaccess\n"
-"POT-Creation-Date: 2012-01-20 16:06+0000\n"
+"POT-Creation-Date: 2012-02-15 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Luca Fabbri <keul@redturtle.it>\n"
 "Language-Team: RedTurtle Technology <sviluppoplone@redturtle.it>\n"
@@ -16,18 +16,38 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: auslfe.formonline.tokenaccess\n"
 
-#: ../browser/change_state_link.pt:8
-msgid "Note"
-msgstr "Nota"
+#: ../browser/change_state_commands.pt:14
+msgid "Approve"
+msgstr "Approva"
+
+#: ../browser/change_state_commands.pt:9
+msgid "Change state of current request"
+msgstr "Cambia lo stato della richiesta"
+
+#: ../browser/change_state_commands.pt:25
+msgid "Comment to the action"
+msgstr "Commento all'azione"
+
+#: ../browser/change_state_commands.pt:19
+msgid "Reject"
+msgstr "Rifiuta"
+
+#: ../browser/change_state_commands.pt:35
+msgid "Send"
+msgstr "Invia"
 
 #: ../browser/approve.pt:42
 msgid "This request is invalid, probably already performed"
 msgstr "La richiesta è invalida, probabilmente già eseguita"
 
-#. Default: "To approve the current document, visit this URL:"
-#: ../browser/change_state_link.pt:10
-msgid "approval_link"
-msgstr "Per approvare questo documento, visita questo URL:"
+#: ../browser/approve.py:28
+msgid "When rejecting, a motivation is required"
+msgstr "Quando si rifiuta, è richiesta una motivazione"
+
+#. Default: "Required if you want to reject the request"
+#: ../browser/change_state_commands.pt:26
+msgid "action-comment-required-when"
+msgstr "Obbligatorio se vuoi rifiutare la richiesta"
 
 #. Default: "You have approved the submitted form"
 #: ../browser/approve.pt:34
@@ -38,9 +58,4 @@ msgstr "Hai approvato la richiesta"
 #: ../browser/approve.pt:38
 msgid "reject-view-message"
 msgstr "Hai rifiutato la richiesta"
-
-#. Default: "To reject the current document, visit this URL:"
-#: ../browser/change_state_link.pt:20
-msgid "reject_link"
-msgstr "Per rifiutare questo documento, visita questo URL:"
 

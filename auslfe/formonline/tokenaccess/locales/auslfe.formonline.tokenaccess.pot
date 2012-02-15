@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-01-20 16:06+0000\n"
+"POT-Creation-Date: 2012-02-15 15:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,37 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: auslfe.formonline.tokenaccess\n"
 
-#: ../browser/change_state_link.pt:8
-msgid "Note"
+#: ../browser/change_state_commands.pt:14
+msgid "Approve"
+msgstr ""
+
+#: ../browser/change_state_commands.pt:9
+msgid "Change state of current request"
+msgstr ""
+
+#: ../browser/change_state_commands.pt:25
+msgid "Comment to the action"
+msgstr ""
+
+#: ../browser/change_state_commands.pt:19
+msgid "Reject"
+msgstr ""
+
+#: ../browser/change_state_commands.pt:35
+msgid "Send"
 msgstr ""
 
 #: ../browser/approve.pt:42
 msgid "This request is invalid, probably already performed"
 msgstr ""
 
-#. Default: "To approve the current document, visit this URL:"
-#: ../browser/change_state_link.pt:10
-msgid "approval_link"
+#: ../browser/approve.py:28
+msgid "When rejecting, a motivation is required"
+msgstr ""
+
+#. Default: "Required if you want to reject the request"
+#: ../browser/change_state_commands.pt:26
+msgid "action-comment-required-when"
 msgstr ""
 
 #. Default: "You have approved the submitted form"
@@ -38,10 +58,5 @@ msgstr ""
 #. Default: "You have rejected the submitted form"
 #: ../browser/approve.pt:38
 msgid "reject-view-message"
-msgstr ""
-
-#. Default: "To reject the current document, visit this URL:"
-#: ../browser/change_state_link.pt:20
-msgid "reject_link"
 msgstr ""
 

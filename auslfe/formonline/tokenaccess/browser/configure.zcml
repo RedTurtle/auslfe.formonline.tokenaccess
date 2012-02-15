@@ -35,7 +35,7 @@
      name="auslfe.formonline.tokenaccess.changeState"
      for="auslfe.formonline.content.interfaces.IFormOnline"
      view=".view.ITinyView"
-     manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+     manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
      permission="zope2.View"
      class=".viewlet.ChangeStateLinkViewlet"
      />  

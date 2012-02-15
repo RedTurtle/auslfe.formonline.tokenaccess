@@ -1,0 +1,41 @@
+<div xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     i18n:domain="auslfe.formonline.tokenaccess"
+     id="formOnlineChangeState"
+	 tal:condition="view/checkToken">
+
+		<form method="post" tal:attributes="action string:${view/site_url}/@@approveFormOnline">
+			<fieldset>
+				<legend i18n:translate="">Change state of current request</legend>
+
+				<div class="field">
+				 	<input id="command-approve" type="radio" name="token"
+					       tal:attributes="value view/tokens/approve" />
+					<label for="command-approve"
+					       i18n:translate="">Approve</label>
+
+				 	<input id="command-reject" type="radio" name="token"
+					       tal:attributes="value view/tokens/reject" />
+					<label for="command-reject"
+					       i18n:translate="">Reject</label>
+
+				</div>
+
+				<div class="field">
+					<label for="comment" i18n:translate="">Comment to the action</label>
+					<div class="formHelp" i18n:translate="action-comment-required-when">
+						Required if you want to reject the request
+					</div>
+					<textarea id="comment" name="comment" rows="5"></textarea>
+				</div>
+
+				<input type="hidden" name="path" tal:attributes="value python:request.get('path') or nothing" /> 
+				<input type="hidden" name="came_from" tal:attributes="value python:request.get('URL')+'?'+request.get('QUERY_STRING')" /> 
+
+				<input class="context" type="submit" name="Send" value="Send"
+				       i18n:attributes="value" />
+			</fieldset>
+		</form>
+
+
+</div>

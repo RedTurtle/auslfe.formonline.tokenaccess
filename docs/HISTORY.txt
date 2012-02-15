@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.3.0 (2012-02-15)
+------------------
+
+* changed approvation viewlet layout: now a form is given to the user [keul]
+* you are forced to give a comment when rejecting a request [keul]
+
 0.2.0 (2012-01-20)
 ------------------
 
